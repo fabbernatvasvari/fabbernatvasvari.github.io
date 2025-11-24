@@ -1,0 +1,148 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GySoft — Szeged / GySoft</title>
+    <meta name="description" content="GySoft — small tech company from Szeged (2025). Bilingual site (HU/EN)." />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+                <defs>
+                    <linearGradient id="g1" x1="0" x2="1">
+                        <stop offset="0" stop-color="#0EA5A4" />
+                        <stop offset="1" stop-color="#6366F1" />
+                    </linearGradient>
+                </defs>
+                <rect x="6" y="6" width="52" height="52" rx="10" fill="url(#g1)" />
+                <text x="32" y="38" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22"
+                    fill="white">G</text>
+            </svg>
+            <div>
+                <h1 class="company">GySoft</h1>
+                <p class="tagline lang" data-en="Szeged • founded 2025 • Tech for schools"
+                    data-hu="Szeged • alapítva: 2025 • Tech az iskoláknak">Szeged • founded 2025 • Tech for schools</p>
+            </div>
+        </div>
+
+
+        <nav class="nav">
+            <button id="langToggle" class="lang-toggle" aria-label="Switch language">HU / EN</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <h2 class="lang" data-en="We build small solutions with big heart"
+                    data-hu="Kis megoldások, nagy szívvel">We build small solutions with big heart</h2>
+                <p class="lead lang"
+                    data-en="GySoft is a Szeged-based startup (connected to Szegedi SZC Vasvári Pál). We craft tools to simplify school workflows: teacher evaluation, class schedules and more."
+                    data-hu="A GySoft egy szegedi kisvállalkozás (a Szegedi SZC Vasvári Pál partnere). Olyan eszközöket készítünk, amelyek egyszerűsítik az iskolai munkafolyamatokat: tanári értékelés, órarendek és még sok más.">
+                    GySoft is a Szeged-based startup (connected to Szegedi SZC Vasvári Pál). We craft tools to simplify
+                    school workflows: teacher evaluation, class schedules and more.</p>
+
+
+                <div class="cta-row">
+                    <a href="#work" class="btn primary lang" data-en="See our projects" data-hu="Projektek">See our
+                        projects</a>
+                    <a href="#contact" class="btn ghost lang" data-en="Contact us"
+                        data-hu="Lépj velünk kapcsolatba">Contact us</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <!-- Decorative illustration -->
+                <svg viewBox="0 0 400 300" class="illustration">
+                    <g opacity="0.95">
+                        <rect x="0" y="0" width="400" height="300" rx="24" fill="#EEF2FF" />
+                        <circle cx="80" cy="70" r="42" fill="#E0F2FE" />
+                        <rect x="150" y="40" width="180" height="70" rx="12" fill="#F0F9FF" />
+                        <rect x="40" y="150" width="320" height="110" rx="12" fill="#FEF3C7" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+
+        <section id="work" class="features">
+            <h3 class="section-title lang" data-en="What we solve" data-hu="Mit oldunk meg">What we solve</h3>
+            <div class="cards">
+                <article class="card">
+                    <h4 class="lang" data-en="Teacher Evaluation" data-hu="Tanári értékelés">Teacher Evaluation</h4>
+                    <p class="lang"
+                        data-en="Anonymous surveys, clear reports and suggestions for continuous improvement."
+                        data-hu="Anonim kérdőívek, átlátható riportok és fejlesztési javaslatok.">Anonymous surveys,
+                        clear reports and suggestions for continuous improvement.</p>
+                </article>
+
+
+                <article class="card">
+                    <h4 class="lang" data-en="Class Schedule Manager" data-hu="Órarendkezelő">Class Schedule Manager
+                    </h4>
+                    <p class="lang"
+                        data-en="Drag & drop timetables, conflict checking and easy sharing for teachers and students."
+                        data-hu="Drag & drop órarend, ütközésellenőrzés és egyszerű megosztás tanároknak és diákoknak.">
+                        Drag & drop timetables, conflict checking and easy sharing for teachers and students.</p>
+                </article>
+
+
+                <article class="card">
+                    <h4 class="lang" data-en="Integrations & APIs" data-hu="Integrációk & API-k">Integrations & APIs
+                    </h4>
+                    <p class="lang"
+                        data-en="Simple REST APIs and secure integrations so you can connect existing systems."
+                        data-hu="Egyszerű REST API-k és biztonságos integrációk, hogy a meglévő rendszerekkel is működjön.">
+                        Simple REST APIs and secure integrations so you can connect existing systems.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <h3 class="section-title lang" data-en="About GySoft" data-hu="A GySoftról">About GySoft</h3>
+            <p class="lang"
+                data-en="We are an eager small team based in Szeged, founded in 2025. We work closely with Szegedi SZC Vasvári Pál Gazdasági és Informatikai Technikum and aim to serve schools worldwide."
+                data-hu="Egy lelkes kis csapat vagyunk Szegeden, alapítva 2025-ben. Szorosan együttműködünk a Szegedi SZC Vasvári Pál Gazdasági és Informatikai Technikummal, és célunk, hogy az iskolák számára világszerte hasznos megoldásokat szállítsunk.">
+                We are an eager small team based in Szeged, founded in 2025. We work closely with Szegedi SZC Vasvári
+                Pál Gazdasági és Informatikai Technikum and aim to serve schools worldwide.</p>
+
+
+            <ul class="bullets">
+                <li class="lang" data-en="Our vision: meaningful tools for education"
+                    data-hu="Víziónk: hasznos eszközök az oktatásban">Our vision: meaningful tools for education</li>
+                <li class="lang" data-en="Engagement: we ship, learn and iterate"
+                    data-hu="Elköteleződés: megvalósítunk, tanulunk és finomítunk">Engagement: we ship, learn and
+                    iterate</li>
+                <li class="lang" data-en="Team: community & partnership driven"
+                    data-hu="Csapat: közösség- és partnerség-orientált">Team: community & partnership driven</li>
+            </ul>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <h3 class="section-title lang" data-en="Get in touch" data-hu="Lépj kapcsolatba velünk">Get in touch</h3>
+            <p class="lang" data-en="Interested in a collaboration or a demo? Send us a message — we respond quickly."
+                data-hu="Érdekel egy együttműködés vagy demo? Küldj üzenetet — gyorsan válaszolunk.">Interested in a
+                collaboration or a demo? Send us a message — we respond quickly.</p>
+
+
+            <form id="contactForm" class="contact-form" onsubmit="return false;">
+                <label class="lang" data-en="Your name" data-hu="Neved">Your name</label>
+                <input id="name" placeholder="Jakab Gipsz / John Doe" />
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="lang" data-en="© 2025 GySoft. All rights reserved."
+            data-hu="© 2025 GySoft. Minden jog fenntartva.">© 2025 GySoft. All rights reserved.</p>
+    </footer>
+    <script src="js/lang.js"></script>
+</body>
+</html>
