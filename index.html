@@ -1,65 +1,68 @@
-<!-- FILE: index.html -->
 <!doctype html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Duális képzés - GySoft</title>
-    <meta name="description" content="GySoft — small tech company from Szeged (2025). Bilingual site (HU/EN)." />
+    <title>Duális képzés – GySoft</title>
+    <meta name="description"
+        content="GySoft – hivatalos duális képzőhely Szegeden. Valódi, fizetett szakmai tapasztalat szoftverfejlesztő és szoftvertesztelő technikumi tanulóknak." />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="skip-links">
-            <li><a href="#">Főoldal</a></li>
-            <li><a href="#">2025-ös évfolyam</a></li>
-            <li><a href="#">Szoftverfejlesztő részleg</a></li>
-        </ul>
-    </nav>
     <header class="topbar">
         <div class="brand">
             <img src="img/logo.png" alt="Logó helye" class="logo" />
             <div>
-                <h1 class="company">Duális képzés - GySoft</h1>
-                <p class="tagline lang" data-en="Szeged"
-                    data-hu="Szeged">Szeged</p>
+                <h1 class="company lang" data-hu="Duális képzés – GySoft" data-en="Dual Training – GySoft">Duális képzés
+                    – GySoft</h1>
+                <p class="tagline lang" data-hu="Szeged" data-en="Szeged">Szeged</p>
             </div>
         </div>
-
-
         <nav class="nav">
-            <button id="langToggle" class="lang-toggle" aria-label="Switch language">HU / EN</button>
+            <button id="langToggle" class="lang-toggle" aria-label="Nyelvváltás">HU / EN</button>
         </nav>
     </header>
 
-
     <main>
+        <!-- CÉL -->
         <section class="hero">
             <div class="hero-inner">
-                <h2 class="lang" data-en="We build small solutions with big heart"
-                    data-hu="Kis megoldások, nagy szívvel">We build small solutions with big heart</h2>
+                <h2 class="lang" data-hu="Valódi szakmai tapasztalat technikumi tanulóknak"
+                    data-en="Real professional experience for vocational IT students">
+                    Valódi szakmai tapasztalat technikumi tanulóknak
+                </h2>
                 <p class="lead lang"
-                    data-en="GySoft is a Szeged-based startup (connected to Szegedi SZC Vasvári Pál). We craft tools to simplify school workflows: teacher evaluation, class schedules and more."
-                    data-hu="A GySoft egy szegedi kisvállalkozás (a Szegedi SZC Vasvári Pál partnere). Olyan eszközöket készítünk, amelyek egyszerűsítik az iskolai munkafolyamatokat: tanári értékelés, órarendek és még sok más.">
-                    GySoft is a Szeged-based startup (connected to Szegedi SZC Vasvári Pál). We craft tools to simplify
-                    school workflows: teacher evaluation, class schedules and more.</p>
-
-
+                    data-hu="A GySoft hivatalos duális képzőhelyként szoftverfejlesztő és szoftvertesztelő tanulókat fogad szakképzési munkaszerződéssel. Itt nem gyakorlófeladatokat kapsz, hanem valódi projekteken dolgozol mentorálás mellett."
+                    data-en="GySoft is an official dual training partner for software developer and software tester students. You work on real projects under mentorship, not demo tasks.">
+                    A GySoft hivatalos duális képzőhelyként szoftverfejlesztő és szoftvertesztelő tanulókat fogad
+                    szakképzési munkaszerződéssel. Itt nem gyakorlófeladatokat kapsz, hanem valódi projekteken dolgozol
+                    mentorálás mellett.
+                </p>
                 <div class="cta-row">
                     <a href="#work" class="btn primary lang" data-en="See our projects" data-hu="Projektek">See our
                         projects</a>
                     <a href="#contact" class="btn ghost lang" data-en="Contact us"
-                        data-hu="Lépj velünk kapcsolatba">Contact us</a>
+                        data-hu="Kontaktus / Lépj velünk kapcsolatba">Contact us</a>
+
+                    <a href="#apply" class="btn primary lang" data-hu="Jelentkezem" data-en="Apply now">Jelentkezem</a>
                 </div>
             </div>
         </section>
 
+        <!-- MI EZ -->
+        <section class="about">
+            <h3 class="section-title lang" data-hu="Mi ez itt?" data-en="What is this?">Mi ez itt?</h3>
+            <p class="lang"
+                data-hu="Ez egy projektalapú, mentorált duális képzés. A tanulók iskolai és vállalkozói alkalmazások, weboldalak és szoftverek fejlesztésében és tesztelésében vesznek részt."
+                data-en="This is a project-based, mentored dual training program. Students participate in developing and testing real school and business applications, websites and software.">
+                Ez egy projektalapú, mentorált duális képzés.
+            </p>
+        </section>
 
-        <section id="work" class="features">
-            <h3 class="section-title lang" data-en="What we solve" data-hu="Mit oldunk meg">What we solve</h3>
-            <div class="cards">
+        <!-- LEFTOVER korábbi verzióból -->
+         <div class="cards">
                 <article class="card">
                     <h4 class="lang" data-en="Teacher Evaluation" data-hu="Tanári értékelés">Teacher Evaluation</h4>
                     <p class="lang"
@@ -88,10 +91,9 @@
                         Simple REST APIs and secure integrations so you can connect existing systems.</p>
                 </article>
             </div>
-        </section>
 
-
-        <section id="about" class="about">
+            <!-- MÉG EGY KIS LEFTOVER -->
+             <section id="about" class="about">
             <h3 class="section-title lang" data-en="About GySoft" data-hu="A GySoftról">About GySoft</h3>
             <p class="lang"
                 data-en="We are an eager small team based in Szeged, founded in 2025. We work closely with Szegedi SZC Vasvári Pál Gazdasági és Informatikai Technikum and aim to serve schools worldwide."
@@ -124,11 +126,81 @@
                 <input id="name" placeholder="Jakab Gipsz / John Doe" />
             </form>
         </section>
+
+        <!-- PROBLÉMA – MEGOLDÁS -->
+        <section class="features">
+            <h3 class="section-title lang" data-hu="Miért hasznos neked?" data-en="Why is this useful for you?">Miért
+                hasznos neked?</h3>
+            <ul class="bullets">
+                <li class="lang" data-hu="Nehéz valódi szakmai gyakorlatot találni."
+                    data-en="It is hard to find real professional practice.">Nehéz valódi szakmai gyakorlatot találni.
+                </li>
+                <li class="lang" data-hu="Junior állások tapasztalat nélkül szinte elérhetetlenek."
+                    data-en="Junior jobs are almost unreachable without experience.">Junior állások tapasztalat nélkül
+                    szinte elérhetetlenek.</li>
+                <li class="lang" data-hu="A duális képzés valódi fejlesztési tapasztalatot és portfóliót ad."
+                    data-en="Dual training provides real development experience and a portfolio.">A duális képzés valódi
+                    fejlesztési tapasztalatot és portfóliót ad.</li>
+            </ul>
+        </section>
+
+        <!-- FELADATOK -->
+        <section class="features">
+            <h3 class="section-title lang" data-hu="Milyen munkát végezhetsz?" data-en="What kind of work will you do?">
+                Milyen munkát végezhetsz?</h3>
+            <ul class="bullets">
+                <li class="lang" data-hu="Web- és alkalmazásfejlesztés" data-en="Web and application development">Web-
+                    és alkalmazásfejlesztés</li>
+                <li class="lang" data-hu="Frontend és backend feladatok" data-en="Frontend and backend tasks">Frontend
+                    és backend feladatok</li>
+                <li class="lang" data-hu="Szoftvertesztelés" data-en="Software testing">Szoftvertesztelés</li>
+                <li class="lang" data-hu="Alap DevOps jellegű feladatok" data-en="Basic DevOps-related tasks">Alap
+                    DevOps jellegű feladatok</li>
+            </ul>
+        </section>
+
+        <!-- JOGVISZONY -->
+        <section id="about" class="about">
+            <h3 class="section-title lang" data-hu="Jogviszony és juttatás" data-en="Employment and compensation">
+                Jogviszony és juttatás</h3>
+            <p class="lang"
+                data-hu="A képzés szakképzési munkaszerződés keretében zajlik. A tanulót jogszabályban előírt munkabér illeti meg. Ez nem önkéntes és nem fizetés nélküli munka."
+                data-en="The training is based on a vocational employment contract. Students receive legally required compensation. This is not voluntary or unpaid work.">
+                A képzés szakképzési munkaszerződés keretében zajlik.
+            </p>
+        </section>
+
+        <!-- RUGALMASSÁG -->
+        <section class="features">
+            <h3 class="section-title lang" data-hu="Tanulmányok mellett is működik"
+                data-en="Fits alongside your studies">Tanulmányok mellett is működik</h3>
+            <p class="lang"
+                data-hu="Az iskolai kötelezettségek elsőbbséget élveznek. Vizsgaidőszakban és érettségi előtt támogatjuk a felkészülést, a részletek egyénileg egyeztethetők."
+                data-en="School obligations always come first. Exam and graduation periods are supported, and details are agreed individually.">
+                Az iskolai kötelezettségek elsőbbséget élveznek.
+            </p>
+        </section>
+
+        <!-- JELENTKEZÉS -->
+        <section id="apply" class="contact">
+            <h3 class="section-title lang" data-hu="Jelentkezés" data-en="Application">Jelentkezés</h3>
+            <p class="lang" data-hu="Ha érdekel a lehetőség, jelentkezz! A részleteket jelentkezés után egyeztetjük."
+                data-en="If you are interested, apply! Details will be discussed after your application.">
+                Ha érdekel a lehetőség, jelentkezz!
+            </p>
+            <p class="lang" data-hu="Írj nekünk, és gyorsan visszajelzünk."
+                data-en="Send us a message and we will respond quickly.">
+                Írj nekünk, és gyorsan visszajelzünk.
+            </p>
+        </section>
     </main>
+
     <footer class="footer">
-        <p class="lang" data-en="© 2025 GySoft. All rights reserved."
-            data-hu="© 2025 GySoft. Minden jog fenntartva.">© 2025 GySoft. All rights reserved.</p>
+        <p class="lang" data-hu="© 2025 GySoft. Minden jog fenntartva." data-en="© 2025 GySoft. All rights reserved.">©
+            2025 GySoft. Minden jog fenntartva.</p>
     </footer>
+
     <script src="js/lang.js"></script>
 </body>
+
 </html>
