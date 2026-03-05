@@ -36,20 +36,4 @@
             prompt((lang === 'hu') ? 'Másold ki az elérhetést:' : 'Copy contact:', text);
         }) : prompt((lang === 'hu') ? 'Másold ki az elérhetést:' : 'Copy contact:', text);
     });
-
-
-    document.getElementById('sendBtn').addEventListener('click', () => {
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
-        if (!message || !email) {
-            alert((lang === 'hu') ? 'Kérlek töltsd ki az emailt és az üzenetet.' : 'Please fill email and message.');
-            return;
-        }
-        // Demo behaviour: show success and print the payload to console.
-        console.log('Contact payload', { name, email, message });
-        alert((lang === 'hu') ? 'Kösz! Az üzenet elmentve demo módban.' : 'Thanks! Message saved in demo mode.');
-        // reset
-        document.getElementById('contactForm').reset();
-    });
 })();
