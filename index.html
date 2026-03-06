@@ -14,7 +14,7 @@
   <body>
     <header class="topbar">
       <div class="brand">
-        <img src="img/logo.png" alt="Logó helye" class="logo" />
+        <img src="img/logo.png" class="logo" />
         <div>
           <h1
             class="company lang"
@@ -26,11 +26,25 @@
           <p class="tagline lang" data-hu="Szeged" data-en="Szeged">Szeged</p>
         </div>
       </div>
-      <nav class="nav">
+      <div class="cta-row">
+        <a
+          href="#projects"
+          class="btn lang"
+          data-en="See our projects"
+          data-hu="Projektek"
+          >See our projects</a
+        >
+        <a
+          href="#contact"
+          class="btn lang"
+          data-en="Contact us"
+          data-hu="Kontaktus / Lépj velünk kapcsolatba"
+          >Contact us</a
+        >
         <button id="langToggle" class="lang-toggle" aria-label="Nyelvváltás">
           HU / EN
         </button>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -53,26 +67,11 @@
             nem gyakorlófeladatokat kapsz, hanem valódi projekteken dolgozol
             mentorálás mellett.
           </p>
-          <div class="cta-row">
-            <a
-              href="#projects"
-              class="btn primary lang"
-              data-en="See our projects"
-              data-hu="Projektek"
-              >See our projects</a
-            >
-            <a
-              href="#contact"
-              class="btn ghost lang"
-              data-en="Contact us"
-              data-hu="Kontaktus / Lépj velünk kapcsolatba"
-              >Contact us</a
-            >
-          </div>
         </div>
       </section>
 
-      <section class="about">
+      <section class="features">
+        <div class="image"><img src="images/diakok.jpg" /></div>
         <div class="cards">
           <h3
             class="section-title lang"
@@ -91,7 +90,7 @@
         </div>
       </section>
 
-      <section id="about" class="about">
+      <section id="features" class="features">
         <div class="cards">
           <h3
             class="section-title lang"
@@ -134,11 +133,12 @@
             </li>
           </ul>
         </div>
+        <div class="image"><img src="images/diakok.jpg" /></div>
       </section>
 
       <section class="features">
         <div class="cards">
-          <div class="questions">
+          <div>
             <h3
               class="section-title lang"
               data-hu="Miért hasznos neked?"
@@ -174,7 +174,7 @@
         </div>
 
         <div class="cards">
-          <div class="questions">
+          <div class="content">
             <h3
               class="section-title lang"
               data-hu="Milyen munkát végezhetsz?"
@@ -216,7 +216,8 @@
         </div>
       </section>
 
-      <section id="about" class="about">
+      <section id="features" class="features">
+        <div class="image"><img src="images/diakok.jpg" /></div>
         <div class="cards">
           <h3
             class="section-title lang"
@@ -252,9 +253,11 @@
             Az iskolai kötelezettségek elsőbbséget élveznek.
           </p>
         </div>
+        <div class="image"><img src="images/diakok.jpg" /></div>
       </section>
 
-      <section id="apply" class="contact">
+      <section class="features">
+        <div class="image"><img src="images/diakok.jpg" /></div>
         <div class="cards">
           <h3
             class="section-title lang"
@@ -320,13 +323,35 @@
     </main>
 
     <footer class="footer">
-      <p
-        class="lang"
-        data-hu="© 2025 GySoft. Minden jog fenntartva."
-        data-en="© 2025 GySoft. All rights reserved."
-      >
-        © 2025 GySoft. Minden jog fenntartva.
-      </p>
+      <div class="footerColumn">
+        <div class="footerColumnItems">
+          <h3>About us</h3>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+        </div>
+        <div class="footerColumnItems">
+          <h3>About us</h3>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+        </div>
+        <div class="footerColumnItems">
+          <h3>About us</h3>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+          <a href="#" class="btn lang" data-en="Link1" data-hu="Link1">Link1</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p
+          class="lang"
+          data-hu="© 2025 GySoft. Minden jog fenntartva."
+          data-en="© 2025 GySoft. All rights reserved."
+        >
+          © 2025 GySoft. Minden jog fenntartva.
+        </p>
+      </div>
     </footer>
 
     <script src="js/lang.js"></script>
