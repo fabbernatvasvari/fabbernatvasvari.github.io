@@ -69,7 +69,6 @@ body {
 
 .projects {
   display: flex;
-  justify-content: center;
 }
 
 .card {
@@ -160,6 +159,14 @@ body {
   align-items: center;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+.right {
+  margin-right: 5%;
+}
+
+.left {
+  margin-left: 5%;
 }
 
 .image {
